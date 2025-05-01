@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Single WhatsApp Message</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h1 class="text-2xl font-semibold mb-6 text-center">Send Single WhatsApp Message</h1>
+        <form id="sendForm" class="space-y-4">
+            <div>
+                <label for="phoneNumber" class="block text-sm font-medium text-gray-700">Phone Number (e.g., 919876543210)</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter recipient phone number"/>
+            </div>
+            <div>
+                <label for="imageUrl" class="block text-sm font-medium text-gray-700">Image URL (Optional)</label>
+                <input type="url" name="imageUrl" id="imageUrl" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter image URL"/>
+            </div>
+             <div>
+                <label for="messageText" class="block text-sm font-medium text-gray-700">Message Text (Optional)</label>
+                <textarea name="messageText" id="messageText" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter message text"></textarea>
+            </div>
+            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                Send Message Now
+            </button>
+        </form>
+        <p id="statusMessage" class="mt-4 text-center text-sm text-gray-600"></p>
+    </div>
+
+    <script>
+        const form = document.getElementById('sendForm');
+        const statusMessage = document.getElementById('statusMessage');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const imageUrl = document.getElementById('imageUrl').value;
+            const messageText = document.getElementById('messageText').value;
+
+            if (!phoneNumber) {
+                statusMessage.textContent = 'Please enter a phone number.';
+                statusMessage.className = 'mt-4 text-center text-sm text-red-600';
+                return;
+            }
+
+            if (!imageUrl && !messageText) {
+                 statusMessage.textContent = 'Please provide either an Image URL or Message Text.';
+                 statusMessage.className = 'mt-4 text-center text-sm text-red-600';
+                 return;
+            }
+
+
+            try {
+                statusMessage.textContent = 'Sending message...';
+                statusMessage.className = 'mt-4 text-center text-sm text-gray-600'; // Reset classes
+
+                const response = await fetch('/send-now', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        phoneNumber: phoneNumber,
+                        imageUrl: imageUrl,
+                        text: messageText
+                    })
+                });
+
+                const result = await response.json(); // Assuming the server responds with JSON
+
+                if (response.ok) {
+                    statusMessage.textContent = result.message || 'Message sent successfully!';
+                    statusMessage.className = 'mt-4 text-center text-sm text-green-600'; // Success color
+                    // Optionally clear the form after successful send
+                    // form.reset();
+                } else {
+                    statusMessage.textContent = 'Error: ' + (result.error || 'Failed to send message.');
+                    statusMessage.className = 'mt-4 text-center text-sm text-red-600'; // Error color
+                }
+
+            } catch (error) {
+                console.error('Send failed:', error);
+                statusMessage.textContent = 'Send failed: ' + error.message;
+                statusMessage.className = 'mt-4 text-center text-sm text-red-600'; // Error color
+            }
+        });
+    </script>
+</body>
+</html>
