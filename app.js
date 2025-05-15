@@ -54,22 +54,23 @@ let isPaused = false;
 // --- Hardcoded Product Data (Image URL and Caption) ---
 // This data will be used directly instead of fetching from Firebase 'number/data'
 const staticProductData = {
-    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/Whasapp%20hair%20design.png",
-    content: `✨‎ *Experience‎ the‎ ultimate hair‎ transformation at‎ MedZeal!* ✨
+    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/WhatsApp%20Image%202025-05-15%20at%205.23.38%20AM.jpeg",
+    content: `*Glow chaalu hai Mumbra mein!*
 
-Get rid of‎ dandruff and boost hair‎ growth‎ with‎ our advanced‎ treatments:
+Tired of dull skin, tan, aur thakaan?
+Time to glow up from andar se!
 
-💆‎ *Dandruff Removal:*‎ Deeply cleanses‎ scalp
-🌱 *GFC:* Stimulates hair growth &‎ strengthens roots
-💫 *PRP:* Revitalizes‎ hair follicles‎ for thicker‎ locks
-💉‎ *QR678:*‎ Advanced therapy for‎ healthy hair‎ growth
+*MedZeal’s Glow Up IV Pack mein milega:*
 
-*Contact us :-* +917044178786
+* ✨ 3 Glutathione Drips – Glow + Detox
+* 🥗 Nutrition Consultation – Skin aur health dono
+* 🎁 FREE Wellness Tracker – Apna progress track karo
 
-*Book your‎ appointment‎ now! Limited slots available.*
-https://www.medzeal.in/appoinment
+*Ye sab sirf ₹6999 mein (actual value ₹10,500)!*
 
-📍‎ MedZeal‎ - Thane trusted‎ hair‎ & skincare‎ destination`
+Offer limited hai – pehle aao, pehle chamko!
+
+Booking ke liye: www.medzeal.in | +91 7044178786`
 };
 
 
