@@ -55,23 +55,23 @@ let isPaused = false;
 // This data will be used directly instead of fetching from Firebase 'number/data'
 const staticProductData = {
     imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/WhatsApp%20Image%202025-05-24%20at%207.29.22%20AM%20(1).jpeg",
-    content: `🌟 🎉 MUMBRA KE LOGON KE LIYE KHAAS OFFER! 🎉 🌟
+    content: `🌟 *🎉 MUMBRA KE LOGON KE LIYE KHAAS OFFER! 🎉* 🌟
 
-📅 🗓️ 26th May se 31st May tak 🗓️
+📅 *🗓️ 26th May se 31st May tak 🗓️*
 
-🏥 MedZeal Wellness Centre par mil raha hai ✨ FREE Skin Consultation!✨  
-👉 Acne, Pigmentation, Hair Fall, ya koi bhi skin concern ho—Expert se bilkul MUFT mashwara karein! 🤩
+🏥 *MedZeal Wellness Centre* par mil raha hai *✨ FREE Skin Consultation!*✨  
+👉 *Acne*, *Pigmentation*, *Hair Fall*, ya koi bhi skin concern ho—*Expert se bilkul MUFT mashwara karein!* 🤩
 
-🎁 Special Bonus! 🎁  
-Agar aap koi bhi treatment ya product lena chahein, toh milega 🔥 Flat 10% OFF! 🔥
+🎁 *Special Bonus!* 🎁  
+Agar aap koi bhi treatment ya product lena chahein, toh milega *🔥 Flat 10% OFF! 🔥*
 
-⏳ Limited slots hain—jaldi book karein! ⏳  
-👉 🔗  https://medzeal.in
+⏳ *Limited slots hain—jaldi book karein!* ⏳  
+👉 *🔗  https://medzeal.in*
  👉  +91 70441 78786
 
-📍 MedZeal Wellness Centre, Mumbra
+📍 *MedZeal Wellness Centre, Mumbra*
 
-> ✨ Healthy aur glowing skin ka raaz ab aapke shehar mein, woh bhi exclusive discount ke saath! ✨`
+> *✨ Healthy aur glowing skin ka raaz ab aapke shehar mein, woh bhi exclusive discount ke saath! ✨*`
 };
 
 
