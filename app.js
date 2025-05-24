@@ -54,23 +54,24 @@ let isPaused = false;
 // --- Hardcoded Product Data (Image URL and Caption) ---
 // This data will be used directly instead of fetching from Firebase 'number/data'
 const staticProductData = {
-    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/WhatsApp%20Image%202025-05-15%20at%205.23.38%20AM.jpeg",
-    content: `*Glow chaalu hai Mumbra mein!*
+    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/WhatsApp%20Image%202025-05-24%20at%207.29.22%20AM%20(1).jpeg",
+    content: `🌟 🎉 MUMBRA KE LOGON KE LIYE KHAAS OFFER! 🎉 🌟
 
-Tired of dull skin, tan, aur thakaan?
-Time to glow up from andar se!
+📅 🗓️ 26th May se 31st May tak 🗓️
 
-*MedZeal’s Glow Up IV Pack mein milega:*
+🏥 MedZeal Wellness Centre par mil raha hai ✨ FREE Skin Consultation!✨  
+👉 Acne, Pigmentation, Hair Fall, ya koi bhi skin concern ho—Expert se bilkul MUFT mashwara karein! 🤩
 
-* ✨ 3 Glutathione Drips – Glow + Detox
-* 🥗 Nutrition Consultation – Skin aur health dono
-* 🎁 FREE Wellness Tracker – Apna progress track karo
+🎁 Special Bonus! 🎁  
+Agar aap koi bhi treatment ya product lena chahein, toh milega 🔥 Flat 10% OFF! 🔥
 
-*Ye sab sirf ₹6999 mein (actual value ₹10,500)!*
+⏳ Limited slots hain—jaldi book karein! ⏳  
+👉 🔗  https://medzeal.in
+ 👉  +91 70441 78786
 
-Offer limited hai – pehle aao, pehle chamko!
+📍 MedZeal Wellness Centre, Mumbra
 
-Booking ke liye: www.medzeal.in | +91 7044178786`
+> ✨ Healthy aur glowing skin ka raaz ab aapke shehar mein, woh bhi exclusive discount ke saath! ✨`
 };
 
 
@@ -312,7 +313,7 @@ expressApp.post('/save-product-data', async (req, res) => {
                    const updatedUser = { ...user }; // Create a copy
                    updatedUser.sent = false; // Explicitly set sent to false
                    // Ensure the original number and Male data are preserved
-                   return updatedUser;
+                   return updatedUser; 
                 });
 
                 // Update the entire numbers array in Firebase with reset status
