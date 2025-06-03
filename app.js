@@ -54,24 +54,23 @@ let isPaused = false;
 // --- Hardcoded Product Data (Image URL and Caption) ---
 // This data will be used directly instead of fetching from Firebase 'number/data'
 const staticProductData = {
-    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/WhatsApp%20Image%202025-05-24%20at%207.29.22%20AM%20(1).jpeg",
-    content: `🌟 *🎉 MUMBRA KE LOGON KE LIYE KHAAS OFFER! 🎉* 🌟
+    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/WhatsApp%20Image%202025-05-15%20at%205.23.38%20AM.jpeg",
+    content: `*Glow chaalu hai Mumbra mein!*
 
-📅 *🗓️ 26th May se 31st May tak 🗓️*
+Tired of dull skin, tan, aur thakaan?
+Time to glow up from andar se!
 
-🏥 *MedZeal Wellness Centre* par mil raha hai *✨ FREE Skin Consultation!*✨  
-👉 *Acne*, *Pigmentation*, *Hair Fall*, ya koi bhi skin concern ho—*Expert se bilkul MUFT mashwara karein!* 🤩
+*MedZeal’s Glow Up IV Pack mein milega:*
 
-🎁 *Special Bonus!* 🎁  
-Agar aap koi bhi treatment ya product lena chahein, toh milega *🔥 Flat 10% OFF! 🔥*
+* ✨ 3 Glutathione Drips – Glow + Detox
+* 🥗 Nutrition Consultation – Skin aur health dono
+* 🎁 FREE Wellness Tracker – Apna progress track karo
 
-⏳ *Limited slots hain—jaldi book karein!* ⏳  
-👉 *🔗  https://medzeal.in*
- 👉  +91 70441 78786
+*Ye sab sirf ₹6999 mein (actual value ₹10,500)!*
 
-📍 *MedZeal Wellness Centre, Mumbra*
+Offer limited hai – pehle aao, pehle chamko!
 
-> *✨ Healthy aur glowing skin ka raaz ab aapke shehar mein, woh bhi exclusive discount ke saath! ✨*`
+Booking ke liye: www.medzeal.in | +91 7044178786`
 };
 
 
