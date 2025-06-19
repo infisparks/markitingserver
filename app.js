@@ -54,23 +54,27 @@ let isPaused = false;
 // --- Hardcoded Product Data (Image URL and Caption) ---
 // This data will be used directly instead of fetching from Firebase 'number/data'
 const staticProductData = {
-    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/WhatsApp%20Image%202025-05-15%20at%205.23.38%20AM.jpeg",
-    content: `*Glow chaalu hai Mumbra mein!*
+    imageUrl: "https://raw.githubusercontent.com/infisparks/images/refs/heads/main/grandopening.jpeg",
+    content: `*Grand Opening Alert!* | \`GNH Hospital launch week\` at \`Gautami MedFord Nx\` is here! 🎉  
 
-Tired of dull skin, tan, aur thakaan?
-Time to glow up from andar se!
+*Advanced Skin Treatments* at *special launch prices*:  
+| *PDRN Therapy* – ~₹5000~ → *₹3500*  
+| *Microneedling* – ~₹3500~ → *₹2599*  
+| *Chemical Peels (For Scars)* – ~₹3000~ → *₹2000*  
+| *Bone Marrow Scar Treatment* – ~₹4500~ → *₹3399*  
 
-*MedZeal’s Glow Up IV Pack mein milega:*
+*Plus, with every treatment you get:*  
+| ✅ *Free Skin Consultation*  
+| ✅ *Free Sample Products*  
+| ✅ *Flat 10% Off* on *Acne & Scar Skincare*  
 
-* ✨ 3 Glutathione Drips – Glow + Detox
-* 🥗 Nutrition Consultation – Skin aur health dono
-* 🎁 FREE Wellness Tracker – Apna progress track karo
+*Offer valid only during launch week!*  
+Say goodbye to scars and hello to smooth, confident skin. ✨  
 
-*Ye sab sirf ₹6999 mein (actual value ₹10,500)!*
-
-Offer limited hai – pehle aao, pehle chamko!
-
-Booking ke liye: www.medzeal.in | +91 7044178786`
+*Book your slot now:*  
+| 📲 *Call:* +91 70441 78786  
+| 🌐 *Visit:* www.medzeal.in
+`
 };
 
 
